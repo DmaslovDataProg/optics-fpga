@@ -3,11 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Utilizador\\Documents\\Udemy\\CrashCourseElectronics\\fpga\\verilogFolder\\verilogProj\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Utilizador\\Documents\\Udemy\\CrashCourseElectronics\\fpga\\verilogFolder\\verilogProj\\test.v||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:test.v||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Utilizador\\Documents\\Udemy\\CrashCourseElectronics\\fpga\\test.v||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Utilizador\\Documents\\Udemy\\CrashCourseElectronics\\fpga\\verilogFolder\\verilogProj\\test.v||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:test.v||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Utilizador\\Documents\\Udemy\\CrashCourseElectronics\\fpga\\test.vvp||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,6 +26,32 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "test.v",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\Documents\\Udemy\\CrashCourseElectronics\\fpga\\verilogFolder\\verilogProj\\test.v",
+              "RelativeDocumentMoniker": "test.v",
+              "ToolTip": "C:\\Users\\Utilizador\\Documents\\Udemy\\CrashCourseElectronics\\fpga\\verilogFolder\\verilogProj\\test.v",
+              "RelativeToolTip": "test.v",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-06T11:32:17.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "test.vvp",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\Documents\\Udemy\\CrashCourseElectronics\\fpga\\test.vvp",
+              "RelativeDocumentMoniker": "..\\..\\test.vvp",
+              "ToolTip": "C:\\Users\\Utilizador\\Documents\\Udemy\\CrashCourseElectronics\\fpga\\test.vvp",
+              "RelativeToolTip": "..\\..\\test.vvp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-06T11:23:59.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "test.v",
               "DocumentMoniker": "C:\\Users\\Utilizador\\Documents\\Udemy\\CrashCourseElectronics\\fpga\\test.v",
               "RelativeDocumentMoniker": "..\\..\\test.v",
               "ToolTip": "C:\\Users\\Utilizador\\Documents\\Udemy\\CrashCourseElectronics\\fpga\\test.v",
@@ -30,19 +59,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-03-05T19:25:40.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "test.v",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\Documents\\Udemy\\CrashCourseElectronics\\fpga\\verilogFolder\\verilogProj\\test.v",
-              "RelativeDocumentMoniker": "test.v",
-              "ToolTip": "C:\\Users\\Utilizador\\Documents\\Udemy\\CrashCourseElectronics\\fpga\\verilogFolder\\verilogProj\\test.v",
-              "RelativeToolTip": "test.v",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-03-05T19:12:15.464Z",
               "EditorCaption": ""
             },
             {

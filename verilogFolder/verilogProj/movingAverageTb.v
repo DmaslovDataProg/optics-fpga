@@ -1,14 +1,17 @@
-`timescale 1ns/1ps  // Define time units
+`timescale 1ns/1ps
 
 module tb_moving_avg;
 
-    // 1. Signals for the "Virtual FPGA"
     reg clk;
     reg rst_n;
     reg signed [11:0] tb_data_in;
     wire signed [11:0] tb_data_out;
 
-    // 2. Instantiate your Filter (Connect the "Box")
+    // 1. Create a "Memory Array" to hold the file data
+    // Depth is 2400 (matches your 0.05s @ 48kHz signal)
+    reg [11:0] test_memory [0:2399];
+    integer i;
+
     moving_avg uut (
         .clk(clk),
         .rst_n(rst_n),
@@ -16,36 +19,32 @@ module tb_moving_avg;
         .data_out(tb_data_out)
     );
 
-    // 3. Clock Generation (100MHz = 10ns period) 
-    // since it flips every 5ns, a full cycle (up and down) takes 10ns, our 100MHz heartbeat
-    always #5 clk = ~clk;
+    always #10 clk = ~clk; // 50MHz Clock
 
-    // 4. THE MAIN PROCESS
     initial begin
-        // Initialize signals
+        // Initialize
         clk = 0;
         rst_n = 0;
         tb_data_in = 0;
 
-        // Release Reset after 20ns
-        #20 rst_n = 1;
+        // 2. LOAD THE FILE into test_memory
+        $readmemh("input_signal.hex", test_memory);
+        $display("Loaded %d samples from hex file", 2400);
 
-        // Load your Python data!
-        // We will simulate 500 samples
-        repeat (500) begin
+        #100 rst_n = 1; // Release reset
+
+        // 3. FEED DATA: Loop through the memory
+        for (i = 0; i < 2400; i = i + 1) begin
             @(posedge clk);
-            // In a real test, we'd read from the file here
-            // For now, let's just send a test value
-            tb_data_in = $random % 2048; 
+            tb_data_in = test_memory[i];
         end
 
-        $display("Simulation Finished");
+        $display("Processing Complete.");
         $finish;
     end
 
-    // 5. Generate a waveform file for GTKWave
     initial begin
-        $dumpfile("simulation_result.vcd");
+        $dumpfile("moving_avg_sim.vcd");
         $dumpvars(0, tb_moving_avg);
     end
 
