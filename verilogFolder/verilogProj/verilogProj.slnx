@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="verilogProj/verilogProj.vcxproj" Id="d77f7d42-7440-4410-9fed-c891e99d5a59" />
+</Solution>
