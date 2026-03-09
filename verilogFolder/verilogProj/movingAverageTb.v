@@ -47,5 +47,13 @@ module tb_moving_avg;
         $dumpfile("moving_avg_sim.vcd");
         $dumpvars(0, tb_moving_avg);
     end
+    // Save the output data as a decimal number for later comparison in Python
+    integer out_file;
+    initial out_file = $fopen("verilog_output.txt", "w");
 
+    always @(posedge clk) begin
+        if (rst_n) begin
+            $fdisplay(out_file, "%d", tb_data_out);
+        end
+    end
 endmodule
