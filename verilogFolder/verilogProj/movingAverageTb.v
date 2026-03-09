@@ -12,7 +12,7 @@ module tb_moving_avg;
     reg [11:0] test_memory [0:2399];
     integer i;
 
-    moving_avg uut (
+    fir_filter uut (
         .clk(clk),
         .rst_n(rst_n),
         .data_in(tb_data_in),
