@@ -1,7 +1,9 @@
 # Optic signals processing using FPGA 
 Project for FPGA with the unfiltered light processing. 
 
- 
+The comparison between simulated noise+sine, filtered sine and the FPGA-processed output:
+![figure](https://github.com/DmaslovDataProg/optics-fpga/blob/main/comparisonSimulatedWithPythonAndVerilog.png)
+
 ## Simulation stage
 
 **Python environment** The 1 kHz sine wave with the white noise contamination is simulated, filtered and the FIR coefficients are delivered. It serves for 4 purposes:
@@ -26,6 +28,8 @@ Make sure that you run in a clean environement (some already installed libraries
 ### For Verilog code:
 Visual studio for the Verilog files, with the Verilog extension installed. Compilation of the final testbench is performed as follow:
 `iverilog -o fir_sim FirFilter.v movingAverageTb.v`  
+The ouput in the GtkWave should look like this
+![gtkWave output](https://github.com/DmaslovDataProg/optics-fpga/blob/main/gtkWaveInputOutput.png)
 
 ## Hardware list: 
 Coming soon..
